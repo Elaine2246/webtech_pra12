@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 5px 14px;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333333;
+    font-size: 12px;
+}
+
+.container {
+    width: 100%;
+    min-height: 415px;
+    margin: 0 auto;
+    padding: 20px 22px;
+    background: #f1f6f1;
+    border: 1px solid #e2e9e2;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 0 0 18px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #6b9e70;
+    color: #303c30;
+}
+
+.form-card,
+.table-card {
+    background: #ffffff;
+    padding: 17px;
+    margin-bottom: 18px;
+    border: 1px solid #e0e9e0;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+input {
+    width: 122px;
+    height: 22px;
+    padding: 4px 7px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: #333333;
+    background: #f8faf8;
+    border: 1px solid #d5e2d5;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: 1px solid #6b9e70;
+}
+
+.form-actions {
+    flex-basis: 100%;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+button {
+    padding: 5px 9px;
+    font-size: 9px;
+    border: 1px solid #d6ded6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: #6b9e70;
+    color: white;
+    border-color: #6b9e70;
+    font-weight: bold;
+}
+
+.secondary-btn {
+    background: #eeeeee;
+    color: #333333;
+}
+
+.message {
+    margin: 8px 0 0;
+    font-size: 11px;
+    color: #477e4b;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 9px;
+}
+
+thead {
+    background: #6b9e70;
+    color: #ffffff;
+}
+
+th {
+    padding: 7px 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+td {
+    padding: 9px 8px;
+    text-align: center;
+    border-bottom: 1px solid #edf1ed;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f8faf8;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.edit-btn {
+    margin-right: 4px;
+    background: #8dbb91;
+    color: white;
+    border-color: #8dbb91;
+}
+
+.delete-btn {
+    background: #f1f3f1;
+    color: #333333;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 16px 10px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-basis: 100%;
+    }
+}
